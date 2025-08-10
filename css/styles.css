@@ -405,10 +405,17 @@ button {
   padding: 72px 0;
   background-color: #2e2f42;
   background-image: linear-gradient(rgb(46 47 66 / 70%), rgb(46 47 66 / 70%)),
-    url(../images/hero-background.jpg);
+    url(../images/hero-background@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-resolution: 192dpi) {
+  .main-hero {
+    background-image: linear-gradient(rgb(46 47 66 / 70%), rgb(46 47 66 / 70%)),
+      url(../images/hero-background@2x.jpg);
+  }
 }
 
 .hero-title {
